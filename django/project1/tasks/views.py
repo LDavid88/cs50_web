@@ -7,3 +7,6 @@ def index(request):
     return render(request, "tasks/index.html", {
         "items": items
     })
+
+def add(request):
+    return render(request, "tasks/add.html")

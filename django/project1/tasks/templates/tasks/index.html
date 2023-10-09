@@ -1,14 +1,10 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Tasks</h1>
-        {% for item in items %}
-            <ul>
-                <li>{{ item }}</li>
-            </ul>
-        {% endfor %}
-    </body>
-</html>
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+    <h1>Tasks</h1>
+    {% for item in items %}
+    <ul>
+        <li>{{ item }}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}
